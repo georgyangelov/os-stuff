@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Fresh
+Comment=Fresh, a GTK theme by Matheus Ligabue. Part of Fresh, a theme suite for Pantheon.
+Encoding=UTF-8
+
+Name[en_US]=elementary
+
+[X-GNOME-Metatheme]
+GtkTheme=elementary
+MetacityTheme=elementary
+IconTheme=elementary
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize:maximize
