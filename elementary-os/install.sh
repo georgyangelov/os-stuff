@@ -35,3 +35,13 @@ dconf write /org/pantheon/desktop/gala/behavior/hotcorner-bottomleft '"show-work
 dconf write /org/pantheon/desktop/gala/behavior/hotcorner-bottomright '"window-overview-all"'
 
 echo "Activate the slim wingpanel from System settings -> Tweaks -> Wingpanel Slim"
+
+# Change terminal color scheme
+echo "Making the terminal white..."
+dconf write /org/pantheon/terminal/settings/audible-bell 0
+dconf write /org/pantheon/terminal/settings/background '"#dedede"'
+dconf write /org/pantheon/terminal/settings/cursor-color '"#525252"'
+dconf write /org/pantheon/terminal/settings/follow-last-tab 0
+dconf write /org/pantheon/terminal/settings/opacity 95
+dconf write /org/pantheon/terminal/settings/palette '"#070736364242:#D3D301010202:#858599990000:#B5B589890000:#26268B8BD2D2:#D3D336368282:#2A2AA1A19898:#EEEEE8E8D5D5:#000014141A1A:#CBCB4B4B1616:#58586E6E7575:#65657B7B8383:#838394949696:#6C6C7171C4C4:#9393A1A1A1A1:#FFFFFBFBF0F0"'
+dconf write /org/pantheon/terminal/settings/foreground '"#000000"'
