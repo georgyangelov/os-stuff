@@ -1,33 +1,28 @@
 #!/bin/sh
 
-if [ `whoami` != "root" ]; then
-    echo "Please run this with sudo!"
-    exit 1
-fi
-
 # Add the community PPA
-apt-add-repository -y ppa:versable/elementary-update
-apt-get update > /dev/null
+sudo apt-add-repository -y ppa:versable/elementary-update > /dev/null
+sudo apt-get update > /dev/null
 
 # UI tweaks
 echo "Installing UI tweaks..."
-apt-get install -y elementary-tweaks elementary-thirdparty-icons wingpanel-slim indicator-synapse elementary-plank-themes > /dev/null
+sudo apt-get install -y elementary-tweaks elementary-thirdparty-icons wingpanel-slim indicator-synapse elementary-plank-themes > /dev/null
 
 # Wallpapers
 echo "Installing additional wallpapers..."
-apt-get install -y elementary-wallpaper-collection
+sudo apt-get install -y elementary-wallpaper-collection >/dev/null
 
 # Apps
 echo "Installing a cool video player Audience..."
-apt-get install -y audience
+sudo apt-get install -y audience >/dev/null
 
 # Install the custom theme and activate it
 echo "Installing a custom theme..."
-cp -r themes /usr/share/themes
+sudo cp -r themes/* /usr/share/themes
 gsettings set org.gnome.desktop.interface gtk-theme 'Fresh'
 
 # Install the dock theme and activate it
-cp -r dock-themes /usr/share/plank/themes
+sudo cp -r dock-themes/* /usr/share/plank/themes
 echo "To activate the cool dock theme go to system settings -> Desktop -> Dock and choose the Fresh-Glow theme"
 
 # Add minimize button
