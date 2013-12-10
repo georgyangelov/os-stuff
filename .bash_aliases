@@ -33,6 +33,10 @@ alias gdiffw="git diff --color-words --patience --diff-filter=MTUXB"
 alias gdiffm="git diff --patience --diff-filter=MTUXB"
 alias gdiffam="git diff --patience --diff-filter=AMTUXB"
 alias gshow="git show"
+alias gmerge="git merge"
+alias grebase="git rebase"
+alias gignore="git update-index --assume-unchanged"
+alias gnoignore="git update-index --no-assume-unchanged"
 
 # CD without cd, correct spelling errors in cd
 shopt -s autocd cdspell dirspell
