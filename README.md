@@ -1,4 +1,4 @@
-os-stuff
-========
+Operating system stuff
+======================
 
-Configuration files, themes etc.
+Configuration files, themes, etc...
