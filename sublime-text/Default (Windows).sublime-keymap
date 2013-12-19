@@ -1,0 +1,65 @@
+[
+    {"keys": ["alt+["], "command": "prev_view"},
+    {"keys": ["alt+]"], "command": "next_view"},
+
+    {"keys": ["alt+q"], "command": "close_file"},
+
+    {
+        "keys": ["alt+."],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1]]
+        }
+    },
+    {
+        "keys": ["alt+/"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+    {
+        "keys": ["ctrl+alt+/"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.33, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+    {
+        "keys": ["ctrl+alt+."],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.66, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+
+    {"keys": ["alt+-"], "command": "move_to_group", "args": {"group": 0}},
+    {"keys": ["alt+="], "command": "move_to_group", "args": {"group": 1}},
+
+    {"keys": ["alt+;"], "command": "focus_group", "args": {"group": 0}},
+    {"keys": ["alt+'"], "command": "focus_group", "args": {"group": 1}},
+
+    {"keys": ["alt+k"], "command": "toggle_side_bar"},
+    {"keys": ["alt+l"], "command": "focus_side_bar"},
+
+    {"keys": ["alt+b"], "command": "hide_panel", "args": {"cancel": true}},
+
+    {"keys": ["alt+left"], "command": "move_to", "args": {"to": "bol", "extend": false}},
+    {"keys": ["alt+right"], "command": "move_to", "args": {"to": "eol", "extend": false}},
+    { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 10.0 } },
+    { "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -10.0 } },
+    { "keys": ["alt+up"], "command": "swap_line_up" },
+    { "keys": ["alt+down"], "command": "swap_line_down" }
+]
