@@ -1,0 +1,13 @@
+{
+	"always_show_minimap_viewport": true,
+	"color_scheme": "Packages/User/Storm.tmTheme",
+	"enable_tab_scrolling": false,
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Piatto Light 3.sublime-theme",
+	"word_wrap": true,
+    "trim_trailing_white_space_on_save": true
+}
