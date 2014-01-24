@@ -39,7 +39,7 @@ echo "Activate the slim wingpanel from System settings -> Tweaks -> Wingpanel Sl
 # Change terminal color scheme
 echo "Making the terminal white..."
 dconf write /org/pantheon/terminal/settings/audible-bell 0
-dconf write /org/pantheon/terminal/settings/background '"#dedede"'
+dconf write /org/pantheon/terminal/settings/background '"#f0f0f0"'
 dconf write /org/pantheon/terminal/settings/cursor-color '"#525252"'
 dconf write /org/pantheon/terminal/settings/follow-last-tab 0
 dconf write /org/pantheon/terminal/settings/opacity 95
